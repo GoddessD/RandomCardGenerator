@@ -1,1 +1,56 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  background-color: white;
+  height: 500px;
+  width: 350px;
+  margin: auto;
+  margin-top: 2in;
+}
+.number {
+  font-size: 200px;
+  margin: auto;
+}
+.card::before,
+.card::after {
+  font-size: 150px;
+  position: absolute;
+}
+.card::before {
+  top: -2.3rem;
+}
+.card::after {
+  transform: rotate(180deg);
+  bottom: -2.3rem;
+  right: 10px;
+}
+body {
+  background-color: green;
+}
+
+.hearts::before,
+.hearts::after {
+  content: "\2665";
+}
+
+.diamonds::before,
+.diamonds::after {
+  content: "\2666";
+}
+
+.hearts::before,
+.hearts::after,
+.diamonds::before,
+.diamonds::after {
+  color: red;
+}
+
+.spades::before,
+.spades::after {
+  content: "\2660";
+}
+
+.clubs::before,
+.clubs::after {
+  content: "\2663";
+}
