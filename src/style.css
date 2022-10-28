@@ -6,6 +6,7 @@
   width: 350px;
   margin: auto;
   margin-top: 2in;
+  border-radius: 25px;
 }
 .number {
   font-size: 200px;
